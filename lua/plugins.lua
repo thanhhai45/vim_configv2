@@ -43,28 +43,30 @@ packer.init({
 return packer.startup(function(use)
 	-- My plugins here
 
-	use ({ 'wbthomason/packer.nvim' }) -- Have packer manage itself
-  use ({ 'nvim-lua/popup.nvim' }) -- An implementation of the PopupAPI from vim in Neovim
-	use ({ 'nvim-lua/plenary.nvim' }) -- Useful lua functions used by lots of plugins
-  use ({ 'kyazdani42/nvim-web-devicons' })
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icons
-    },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
-  }
+	use({ 'wbthomason/packer.nvim' }) -- Have packer manage itself
+  use({ 'nvim-lua/popup.nvim' }) -- An implementation of the PopupAPI from vim in Neovim
+	use({ 'nvim-lua/plenary.nvim' }) -- Useful lua functions used by lots of plugins
+  use({ 'kyazdani42/nvim-web-devicons' })
+  use({ 'kyazdani42/nvim-tree.lua' })
+  use({ 'windwp/nvim-autopairs'})
+  use({ 'lukas-reineke/indent-blankline.nvim' })
+  use({ 'JoosepAlviste/nvim-ts-context-commentstring' })
+  use({ 'goolord/alpha-nvim'})
+  use({'terrortylor/nvim-comment' })
+  use({ 'RRethy/nvim-treesitter-endwise' })
+  use({ 'vim-test/vim-test' })
   -- Colorschemes
-  use ({ 'projekt0n/github-nvim-theme' })
-
+  use({ 'projekt0n/github-nvim-theme' })
+  use({ 'akinsho/bufferline.nvim', tag = "v2.*" })
+  use({ 'nvim-lualine/lualine.nvim' })
 
 	-- cmp plugins
-  use ({ 'hrsh7th/nvim-cmp' })
-  use ({ 'hrsh7th/cmp-buffer' })
-  use ({ 'hrsh7th/cmp-path' })
-  use ({ 'saadparwaiz1/cmp_luasnip' })
-  use ({ 'hrsh7th/cmp-nvim-lsp' })
-  use ({ 'hrsh7th/cmp-nvim-lua'})
+  use({ 'hrsh7th/nvim-cmp' })
+  use({ 'hrsh7th/cmp-buffer' })
+  use({ 'hrsh7th/cmp-path' })
+  use({ 'saadparwaiz1/cmp_luasnip' })
+  use({ 'hrsh7th/cmp-nvim-lsp' })
+  use({ 'hrsh7th/cmp-nvim-lua'})
 
 	-- snippets
   use({ 'L3MON4D3/LuaSnip' })
@@ -78,9 +80,15 @@ return packer.startup(function(use)
   use({ 'nvim-telescope/telescope.nvim' })
 
 	-- Treesitter
-  use({ 'nvim-treesitter/nvim-treesitter' })
-	-- Git
+  use(
+    {
+      'nvim-treesitter/nvim-treesitter',
+      run = ":TSUpdate"
+    }
+  )
 
+  -- Git
+  use({ 'lewis6991/gitsigns.nvim' })
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

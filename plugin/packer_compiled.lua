@@ -74,6 +74,16 @@ _G.packer_plugins = {
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -109,10 +119,35 @@ _G.packer_plugins = {
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -133,6 +168,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-endwise"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-treesitter-endwise",
+    url = "https://github.com/RRethy/nvim-treesitter-endwise"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -158,6 +203,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/haile/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/Users/haile/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
   }
 }
 
