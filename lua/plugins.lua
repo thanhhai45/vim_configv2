@@ -52,9 +52,15 @@ return packer.startup(function(use)
   use({ 'lukas-reineke/indent-blankline.nvim' })
   use({ 'JoosepAlviste/nvim-ts-context-commentstring' })
   use({ 'goolord/alpha-nvim'})
-  use({'terrortylor/nvim-comment' })
+  use({ 'terrortylor/nvim-comment' })
   use({ 'RRethy/nvim-treesitter-endwise' })
   use({ 'vim-test/vim-test' })
+  use({ 'folke/which-key.nvim',
+    config = function()
+      require("which-key").setup {
+      }
+    end
+  })
   -- Colorschemes
   use({ 'projekt0n/github-nvim-theme' })
   use({ 'akinsho/bufferline.nvim', tag = "v2.*" })
