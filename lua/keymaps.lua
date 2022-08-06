@@ -5,8 +5,6 @@ local wk = require("which-key")
 
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 local keymap = vim.api.nvim_set_keymap
 -- Visual --
 -- Stay in indent mode
@@ -14,9 +12,13 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "J", ":m >+1<CR>gv=gv", opts)
-keymap("v", "K", ":m >-2<CR>gv=gv", opts)
-keymap("v", "p", '"_dP', opts)
+keymap("v", "J", ":m .+1<CR>==", opts)
+keymap("v", "K", ":m .-2<CR>==", opts)
+keymap("n", "J", ":m '>+2<CR>gv=gv", opts)
+keymap("n", "K", ":m '>-1<CR>gv=gv", opts)
+
+-- Save When visual mode
+keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
 
 wk.register({
   ["<leader>"] = {

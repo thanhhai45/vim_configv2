@@ -1,17 +1,17 @@
-local status_ok, telescope = pcall(require, "telescope")
+local status_ok, telescope_config = pcall(require, "telescope")
 if not status_ok then
   return
 end
 
 local actions = require "telescope.actions"
 
-telescope.setup {
+telescope_config.setup {
   defaults = {
 
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
-    file_ignore_patterns = { "^./.git/", "^node_modules/", "^vendor/" },
+    file_ignore_patterns = { "^./.git/", "^./node_modules/", "^vendor/", "./node_modules/*", "node_modules", "^node_modules/*", "node_modules/*" },
 
     mappings = {
       i = {
