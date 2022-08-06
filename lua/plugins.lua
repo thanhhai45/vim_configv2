@@ -65,6 +65,9 @@ return packer.startup(function(use)
   use({ 'projekt0n/github-nvim-theme' })
   use({ 'akinsho/bufferline.nvim', tag = "v2.*" })
   use({ 'nvim-lualine/lualine.nvim' })
+  use({ 'EdenEast/nightfox.nvim' })
+  use({ "catppuccin/nvim", as = "catppuccin"})
+
 
 	-- cmp plugins
   use({ 'hrsh7th/nvim-cmp' })
