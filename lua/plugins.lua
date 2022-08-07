@@ -61,6 +61,7 @@ return packer.startup(function(use)
       }
     end
   })
+  use({ 'ahmedkhalf/project.nvim' })
   -- Colorschemes
   use({ 'projekt0n/github-nvim-theme' })
   use({ 'akinsho/bufferline.nvim', tag = "v2.*" })
@@ -84,6 +85,7 @@ return packer.startup(function(use)
 	-- LSP
   use({ 'neovim/nvim-lspconfig' }) -- enable LSP
 	use({ 'williamboman/nvim-lsp-installer' }) -- simple to use language server installer
+  use({ 'jose-elias-alvarez/null-ls.nvim' }) -- format 
 
 	-- Telescope
   use({ 'nvim-telescope/telescope.nvim' })
@@ -95,6 +97,11 @@ return packer.startup(function(use)
       run = ":TSUpdate"
     }
   )
+
+  -- Debugger
+  use({ 'mfussenegger/nvim-dap' })
+  use({ 'rcarriga/nvim-dap-ui' })
+  use({ 'Pocco81/DAPInstall.nvim' })
 
   -- Git
   use({ 'lewis6991/gitsigns.nvim' })
