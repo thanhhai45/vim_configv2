@@ -38,6 +38,11 @@
 - Save file when insert mode: ```Control + s```
 - Save file when normal mode: ```,s```
 - Split file: ```,sv``` 
+- Show popup lint language (ruby, javascript): ```gl```
+- Format code: ```,lf```
+- Clear hightlight: ```,c``` 
+- Go to defination: ```gd```
+- Go to declaration: ```gD```
 
 ## Screenshot
 <img width="1235" alt="Screen Shot 2022-08-06 at 15 13 54" src="https://user-images.githubusercontent.com/22336859/183242704-42c4a5d6-a834-40a9-9fdd-62cf6ac75d06.png">
