@@ -35,8 +35,9 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "Fira Code:h17",               -- the font used in graphical neovim applications
+  guifont = "Fura Code:h12",               -- the font used in graphical neovim applications
   termguicolors = true,                    -- Enable 24-bit RGB colors
+  guicursor="n-v-c:block-Cursor/i:ver100-iCursor"
 }
 
 vim.opt.shortmess:append "c"
